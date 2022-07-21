@@ -6,25 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/img_dice"
+        android:layout_width="160dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/dice_1" />
+
     <Button
         android:id="@+id/btn_roll"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:text="@string/roll"
-        app:layout_constraintEnd_toEndOf="@+id/text_result"
-        app:layout_constraintStart_toStartOf="@+id/text_result"
-        app:layout_constraintTop_toBottomOf="@+id/text_result" />
-
-    <TextView
-        android:id="@+id/text_result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="1" />
+        app:layout_constraintEnd_toEndOf="@+id/img_dice"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="@+id/img_dice"
+        app:layout_constraintTop_toBottomOf="@+id/img_dice" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
